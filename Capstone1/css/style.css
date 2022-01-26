@@ -98,7 +98,7 @@ header .nav-item {
 }
 @media screen and (max-width: 769px){
 	.title .content {
-		font-size: 50px;
+		font-size: 40px;
 	}
 }
 /*Title Section Area End*/
@@ -120,16 +120,14 @@ header .nav-item {
 }
 
 .about-me .row .col-md-6 .panel {
-	position: absolute;
-	top: 7vmin;
-	left: -18vmin;
+	
 	background: white;
 	border-radius: 3px;
 	text-align: left;
 	padding: 10vmin 5vmin 15vmin 10vmin;
 	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
 	font-family: 'Inter', sans-serif;
-	z-index: 1;
+	
 }
 
 
@@ -188,10 +186,6 @@ font-family:'Inter', sans-serif;
 	padding-bottom: 50px;
 }
 
-.site-main .services-area .services-title {
-	padding: 0 14rem;
-}
-
 .site-main .services-area .services-title h1 {
 	font-family: 'Inter', sans-serif;
 	font-size: 40px;
@@ -199,12 +193,6 @@ font-family:'Inter', sans-serif;
 	color: var(--dark);
 }
 
-.site-main .services-area .services-title p {
-	font-family: 'Inter', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	color: var(--dark);
-}
 
 .site-main .services-area .services{
 	background:linear-gradient(135.48deg, rgba(116, 108, 112, 0.4) -0.88%, rgba(116, 108, 112, 0.1) 103.5%);
@@ -235,7 +223,7 @@ font-family:'Inter', sans-serif;
 
 /*Portfolio Area*/
 .site-main .portfolio-area {
-	padding: 5rem 0;
+	padding: 4rem 0;
 }
 
 .site-main .portfolio-area .project-title h1{
@@ -271,6 +259,9 @@ font-family:'Inter', sans-serif;
 }
 
 /*Client Area*/
+.section-4 {
+	padding-bottom: 50px;
+}
 .section-4 .container h1{
 	font-family: 'Inter', sans-serif;
 	font-size: 40px;
@@ -309,4 +300,62 @@ font-family:'Inter', sans-serif;
 
 /*Contact Me*/
 
-.contact-
+.contact {
+	background: #e2ded0; background: url("../images/gradientbg.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	padding: 10vmin 1vmin;
+	padding-bottom: 30px;
+}
+
+.contact h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--dark);
+	text-transform: uppercase;
+}
+
+.contact .form-group{
+	text-align: left;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 40px;
+
+}
+
+/*Footer Area Start*/
+
+footer.footer-area{
+    padding: 3rem 0;
+    background: url("../images/gradientbg.png") no-repeat;
+     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+footer.footer-area .social h5{
+	font-family: 'Inter', sans-serif;
+	color: #363638;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+footer.footer-area .social a > i{
+    font-size:24px;
+    padding: 1rem;
+    color: #363638;
+}
+
+footer.footer-area .social a:hover > i{
+    color:  #e2ded0;
+}
+
+footer.footer-area .social p {
+	font-family:  'Inter', sans-serif; ;
+	color: #746c70;
+}
+
+/*Footer Area End*/
