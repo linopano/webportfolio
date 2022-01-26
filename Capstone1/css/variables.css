@@ -1,0 +1,17 @@
+/*CSS variables*/
+
+
+:root{
+	--dark: #363638;
+	--grey: #746c70;
+	--darkblue:  #0e4156;
+    --slategrey: #647c90;
+    --gainsboro: #e2ded0;
+    --border-color: #363638; 
+    --button:  linear-gradient(135.48deg, #BDA3EE -0.88%, rgba(186, 190, 237, 0.47) 103.5%);;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow:  0px 4px 12px rgba(0, 0, 0, 0.21);
+
+}
+
