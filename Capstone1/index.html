@@ -24,7 +24,7 @@
 
   <header class="nav-area">
     <div class="main-menu px-3">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#top">
             <img src="./images/logo.png" alt="logo" width="50" height="34" class="img-fluid">
@@ -66,23 +66,23 @@
 <main class="site-main">
 
   <!-- Title Section Start -->
-  <section class="title container-fluid p-0" id="top">
-    <div class="cover">
-      <div class="content text-center offset-md-2 col-md-8 pt-3">
-        <p>Web Concepts</p>
+  <section class="title container-fluid" id="top">
+    <div class="cover row just">
+      <div class="content text-center col-lg-12 col-md-12 col-sm-12">
+        <p class="pt-5">Web Concepts</p>
         <p>By Lin</p>
       </div>
       <div class="down text-center">
-        <a href="#about"> <img src="./images/scrolldown.gif" width="120" height="160" alt="down" class="img-fluid"> </a>
+        <a href="#about"> <img src="./images/scrolldown.gif" width="120" height="160" alt="down" class="img-fluid pb-2"> </a>
       </div>
     </div>
   </section>
 <!-- Title Section End -->
 
 <!-- About Me Start -->
-<section class="about-me">
+<section class="about-me" id="about">
   <div class="container text-center">
-    <div class="row" id="about">
+    <div class="row" >
       <div class="col-md-6">
         <div class="linopano">
           <img src="./images/linopano.jpg" alt="linopano">
@@ -112,16 +112,16 @@
 
 <!-- Services Area Start -->
 <section class="services-area" id="services">
-  <div class="container-fluid">
+  <div class="container-fluid justify-content-center">
     <div class="row">
-      <div class="col-xl-12 col-sm-12 text-center services-title">
-        <h1 class="text-uppercase title-text">Services Offers</h1>
+      <div class="col-md-12 col-sm-12 text-center services-title">
+        <h1 class="text-uppercase title-text">Services Offer</h1>
       </div>
     </div>
 
     <div class="container services-list">
       <div class="row p-3">
-        <div class="col-xl-4 mb-xl-0">
+        <div class="d-flex justify-content-center col-xl-4 col-sm-12">
           <div class="services">
             <div class="services-img text-center py-4">
               <img src="./images/wordpress.png" alt="services1" >
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 mb-xl-0">
+        <div class="d-flex justify-content-center col-xl-4 col-sm-12 mb-xl-0">
           <div class="services">
             <div class="services-img text-center py-4">
               <img src="./images/frontend.png" alt="services2" >
@@ -147,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 mb-xl-0">
+        <div class="d-flex justify-content-center col-xl-4 col-sm-12 mb-xl-0">
           <div class="services">
             <div class="services-img text-center py-4">
               <img src="./images/virtual.png" alt="services3" >
@@ -171,9 +171,9 @@
 
 <section class="portfolio-area" id="portfolio">
   <div class="container">
-    <div class="project-title pb-5">
-      <h1 class="text-uppercase title-h1">Portfolio</h1>
-      <h2 class="text-uppercase title-h2">Recently Done Project</h2>
+    <div class="port py-5">
+      <h1 class="text-uppercase">Portfolio</h1>
+      <h2 class="text-uppercase">Recently Done Project</h2>
     </div>
 
     <div class="button-group text-center">
@@ -183,7 +183,7 @@
     </div>
 
     <div class="row grid">
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item latest">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p1.jpg">
@@ -196,7 +196,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item popular">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p3.jpg">
@@ -209,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item popular">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p2.jpg">
@@ -222,7 +222,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item upcoming">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p4.jpg">
@@ -235,7 +235,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item upcoming">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p5.jpg">
@@ -248,7 +248,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+      <div class="d-flex justify-content-center col-lg-4 col-md-12 col-sm-12 element-item following">
         <div class="our-project">
           <div class="img">
             <a class="test-popup-link" href="./img/portfolio/p7.jpg">
@@ -270,40 +270,39 @@
 <!-- Client Area Start -->
 
 <section class="client" id="client">
-  <section class="section-4">
     <div class="container text-center">
       <h1 class="text-dark pt-5">What Clients Say</h1>
     </div>
-    <div class="team row ">
-      <div class="col-md-4 col-12 text-center">
-        <div class="card mr-2 d-inline-block shadow-lg">
-          <div class="card-img-top">
+    <div class="team row mx-4 ">
+      <div class="d-flex justify-content-center col-md-4 col-12">
+        <div class="card mr-2 d-inline-block shadow-lg pb-2">
+          <div class="card-img-top text-center">
             <img src="./images/client1.jpg" class="img-fluid border-radius rounded-circle rounded-circle w-50 p-4" alt="">
           </div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">John Doe</h3>
-            <p class="card-text">
+            <p class="card-text ">
               Lin has been doing a great job of communicating with me, keeping my website updated and posting social media contents.
             </p>
-            <p class="text-black-50">CEO at Google</p>
+            <p class="text-black-50">CEO at Obsidian</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12">
+      <div class=" d-flex justify-content-center col-md-4 col-12">
         <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
           <div class="carousel-inner text-center">
             <div class="carousel-item active">
-              <div class="card mr-2 d-inline-block shadow">
-                <div class="card-img-top">
+              <div class="card d-inline-block shadow">
+                <div class="card-img-top text-center">
                   <img src="./images/client2.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Sherrie Holloway</h3>
                   <p class="card-text">
                     My VA is simple amazing so I want to express my gratitude verbally. Thank you Lin! You are amazing!
 
                   </p>
-                  <p class="text-black-50">CEO at Google</p>
+                  <p class="text-black-50">CEO at Entrpreneurmine</p>
                 </div>
               </div>
             </div>
@@ -312,24 +311,24 @@
                 <div class="card-img-top">
                   <img src="./images/client3.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h3 class="card-title">Grace Yu</h3>
                   <p class="card-text">
                     I would recommend her to any online business owner who wants to maintain and uplevel their online presence.
                   </p>
-                  <p class="text-black-50">CEO at Google</p>
+                  <p class="text-black-50">CEO at Marj Studio</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-12 text-center">
+      <div class="d-flex justify-content-center col-md-4 col-12">
         <div class="card mr-2 d-inline-block shadow-lg">
-          <div class="card-img-top">
+          <div class="card-img-top text-center">
             <img src="./images/client3.jpg" class="img-fluid border-radius rounded-circle w-50 p-4" alt="">
           </div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Olivia Louis</h3>
             <p class="card-text">
                I would recommend her to any online business owner who wants to maintain and uplevel their online presence.
@@ -347,16 +346,16 @@
 
           <h2>Contact Me</h2>
 
-          <div class="contact-me row d-lg-flex justify-content-center">
-            <form  class="col-sm-12 col-md-8 col-lg-8 col-xl-4 p-2">
+          <div class="contact-me row d-flex justify-content-center">
+            <form  class="col-sm-6 col-md-8 col-lg-8 col-xl-4 p-2">
               <form>
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Your Name">
                 </div>
                 <div class="form-group pt-3">
-                  <label for="Email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="jolinaopano@gmail.com">
+                  <label for="Email">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@email.com">
                 </div>
                 <div class="form-group pt-3">
                   <label for="contact">Contact Number</label>
@@ -372,15 +371,16 @@
                     </div>
                   </div>
                 </form>
-
-</div>
+          </div>
 
 </div>
 </div>
 </section>
   <!-- Contact Form End -->
 </main>
-   
+<!-- Main Site End-->
+
+   <!-- Footer Area Start -->
    <footer class="footer-area">
     <div class="container">
       <div class="justify-content-center">
@@ -391,16 +391,16 @@
           <h5 class="text-uppercase">Follow me</h5>
           <a href="https://www.facebook.com/wclinopano" target="blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/wclinopano/" target="blank"><i class="fab fa-instagram"></i></a>
-          <a href="www.linkedin.com/in/linopaño" target="blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/linopaño" target="blank"><i class="fab fa-linkedin"></i></a>
       </div>
       <div class="copyrights text-center"></div>
       <p class="text-center pt-3">
-       Copyright ©2022 All rights reserved | This template is made with by Lin Opaño
+       Copyright ©2022 All rights reserved | 
        <a href="#top">Web Concepts By Lin</a>
       </p>
     </div>
    </footer>
-<!-- Main Site End-->
+    <!-- Footer Area End -->
 
 
 
@@ -411,3 +411,4 @@
 
   </body>
 </html>
+

@@ -4,8 +4,8 @@ CSS Reset*/
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 
@@ -53,22 +53,26 @@ header .nav-item {
 }
 
 .nav-area .main-menu .nav-item .active a{
-    background: var(--darkblue);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: var(--darkblue);
     background-clip: text;
+    text-decoration: solid underline;
+
 }
 
 .nav-area .main-menu .nav-item a:hover{
-    background: var(--darkblue);
     -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    -webkit-text-fill-color:var(--darkblue);
     background-clip: text;
+   text-decoration: solid underline;
 }
 
 
 /*Title Section Area*/
 
+.title{
+	padding-top: 100px;
+}
 .title .cover {
     background: url("../images/gradientbg.png") no-repeat;
     background-attachment: fixed;
@@ -76,7 +80,6 @@ header .nav-item {
     background-size: cover;
 	padding: 15vmin 1vmin;
 	padding-bottom: 40px;
-	
 }
 
 .title .content {
@@ -87,7 +90,7 @@ header .nav-item {
 	text-transform: uppercase;
 	color: var(--dark);
 	text-shadow: 3px 2px 5px whitesmoke;
-	line-height: 1.2;
+	line-height: 1;
 }
 
 
@@ -98,7 +101,10 @@ header .nav-item {
 }
 @media screen and (max-width: 769px){
 	.title .content {
-		font-size: 40px;
+		font-family: 'Epilogue', sans-serif;
+		font-weight: 900;
+		font-size: 50px;
+
 	}
 }
 /*Title Section Area End*/
@@ -148,6 +154,7 @@ font-family:'Inter', sans-serif;
 	padding: 1.2rem 1.8rem ;
 	font-family:'Inter', sans-serif;
 	font-weight: 600;
+	font-size: 16px;
 	text-transform: uppercase;
 	line-height: 8px;
 	position: relative;
@@ -178,9 +185,15 @@ font-family:'Inter', sans-serif;
 	z-index: -1;
 	border-radius: 3px;
 }
+
+@media screen and (max-width: 769px){ .about-me .row .col-md-6 .site-buttons button {
+		font-size: 14px;
+	}
+	}
 /*End About Me Area*/
 
 /*Services Offered Start*/
+
 .site-main .services-area {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -191,10 +204,18 @@ font-family:'Inter', sans-serif;
 	font-size: 40px;
 	font-weight: 800;
 	color: var(--dark);
+
 }
 
 
-.site-main .services-area .services{
+@media screen and (max-width: 500px){  .site-main .services-area .services-title h1 {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	}
+
+ .site-main .services-area .services{
 	background:linear-gradient(135.48deg, rgba(116, 108, 112, 0.4) -0.88%, rgba(116, 108, 112, 0.1) 103.5%);
 	padding: 15px 10px 15px 10px;
 	width: 20rem;
@@ -203,9 +224,24 @@ font-family:'Inter', sans-serif;
 	transition: box-shadow .7s ease;
 	border-radius: 5px;
 }
-.site-main .services-area h4 {
+
+@media screen and (max-width: 600px){
+.site-main .services-area .services{
+	padding: 5px;
+}
+}
+
+ .site-main .services-area h4 {
 	font-family: 'Inter', sans-serif;
 	font-size: 20px;
+	font-weight: 600;
+	color: var(--dark);
+	padding-top: 10px;
+}
+
+@media screen and (max-width: 500px){  .site-main .services-area h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
 	font-weight: 600;
 	color: var(--dark);
 	padding-top: 10px;
@@ -218,19 +254,18 @@ font-family:'Inter', sans-serif;
 	color: #746c70;
 	padding-top: 10px;
 }
+}
 
 /*Services Offered End*/
 
 /*Portfolio Area*/
-.site-main .portfolio-area {
-	padding: 4rem 0;
-}
 
-.site-main .portfolio-area .project-title h1{
+.site-main .portfolio-area .port h1{
 	font-family: 'Inter', sans-serif;
 	font-size: 40px;
 	font-weight: 800;
 	color: var(--dark);
+	text-transform: uppercase;
 }
 
 .site-main .portfolio-area .project-title h2 {
@@ -238,7 +273,46 @@ font-family:'Inter', sans-serif;
 	font-size: 30px;
 	font-weight: 500;
 	color: var(--dark);
+	text-transform: uppercase;
+
 }
+
+@media screen and (max-width: 600px){
+	.site-main .portfolio-area .port h1{
+		padding-left: 10px ;
+		font-family: 'Inter', sans-serif;
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--dark);
+	}
+	.site-main .portfolio-area .port h2{
+		padding-left: 10px ;
+		font-family: 'Inter', sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+		color: var(--dark);
+	}
+
+}
+
+@media screen and (min-width: 600px){
+	.site-main .portfolio-area .port h1{
+		font-family: 'Inter', sans-serif;
+		font-size: 40px;
+		font-weight: 800;
+		color: var(--dark);
+	}
+	.site-main .portfolio-area .port h2{
+		font-family: 'Inter', sans-serif;
+		font-size: 32px;
+		font-weight: 500;
+		color: var(--dark);
+	}
+
+}
+
+
+
 
 .site-main .portfolio-area .button-group button {
 	background: transparent;
@@ -259,43 +333,72 @@ font-family:'Inter', sans-serif;
 }
 
 /*Client Area*/
-.section-4 {
-	padding-bottom: 50px;
+.client {
+	padding-top: 50px;
+	padding-bottom: 80px;
+
+
 }
-.section-4 .container h1{
+.client .container h1{
 	font-family: 'Inter', sans-serif;
 	font-size: 40px;
 	font-weight: 800;
 	color: var(--dark);
 	text-transform: uppercase;
+	padding-bottom: 2rem;
 }
 
-.section-4 .team {
-	padding: 10vmin 4vmin;
-}
-
-.section-4 .card {
+.client .card {
 	width: 22rem;
+	padding-bottom: 3rem;
 	
 }
 
-.section-4 .card .card-text{
+.client .card .card-text{
 	padding: 0.5em;
 	font-family: 'Inter', sans-serif;
 	color: #746c70;
 	font-size: 16px;
 }
 
-.section-4 .card .card-title {
+.client .card .card-title {
 	font-family: 'Inter', sans-serif;
 	color: #363638;
 	font-size: 18px;
 	font-weight: 700;
 }
 
-.section-4 .carousel-item {
-	padding-left: 3rem;
+
+@media screen and (max-width: 500px){ 
+	.client .container h1{
+		font-size: 24px;
+		padding-bottom: 1rem;
+	}
+	.client .carousel-item {
+		padding-left: 0.6rem;
+		padding-right: 0.6rem ;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.client .team {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.client .card{
+		width: 19rem;
+	}
+	
+	}
+
+@media screen and (max-width: 320px){ 
+	.client .carousel .carouselExampleControls {
+		margin: 2rem;
+
+	}
 }
+
 /*Client Area End*/
 
 /*Contact Me*/
@@ -326,6 +429,19 @@ font-family:'Inter', sans-serif;
 
 }
 
+
+.contact button {
+	background: dark;
+	background-clip: padding-box;
+	color: var(dark);
+	padding: 10px 18px 10px 18px;
+}
+.contact button:hover {
+	background:  darkslategrey;
+	background-clip: padding-box;
+	color: var(dark);
+	padding: 10px 18px 10px 18px;
+}
 /*Footer Area Start*/
 
 footer.footer-area{
@@ -339,7 +455,7 @@ footer.footer-area{
 footer.footer-area .social h5{
 	font-family: 'Inter', sans-serif;
 	color: #363638;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 700;
 }
 
@@ -359,3 +475,36 @@ footer.footer-area .social p {
 }
 
 /*Footer Area End*/
+
+
+ .service{
+	background:linear-gradient(135.48deg, rgba(116, 108, 112, 0.4) -0.88%, rgba(116, 108, 112, 0.1) 103.5%);
+	padding: 15px 15px 15px 15px;
+	width: 21rem;
+	height: 30rem;
+	margin: 10px 10px;
+	border-radius: 5px;
+	border-color: transparent;
+}
+
+.card {
+	background: transparent;
+	border-color: transparent;
+}
+.service h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--dark);
+	padding-top: 10px;
+}
+
+.service p{
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #746c70;
+	padding-top: 10px;
+}
+
+/*Services Offered End*/
