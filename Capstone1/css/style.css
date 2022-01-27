@@ -223,10 +223,10 @@ font-family:'Inter', sans-serif;
 	}
 }
 
-@media screen and (max-width: 900px){  .site-main .services-area .services-title p {
+@media screen and (max-width: 800px){  .site-main .services-area .services-title p {
 	font-size: 16px;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
 	}
 }
 
