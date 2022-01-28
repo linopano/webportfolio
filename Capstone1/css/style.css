@@ -126,7 +126,6 @@ header .nav-item {
 }
 
 .about-me .row .col-md-6 .panel {
-	
 	background: white;
 	border-radius: 3px;
 	text-align: left;
@@ -179,7 +178,7 @@ font-family:'Inter', sans-serif;
 .about-me .row .col-md-6 .site-buttons button:after {
 	position: absolute;
 	top: -1px;left: -1px;
-	bottom: -1.5px; right: -1.2px;
+	bottom: -1.5px; right: -1.5px;
 	background: var(--button);
 	content: '';
 	z-index: -1;
@@ -293,8 +292,8 @@ font-family:'Inter', sans-serif;
 
 .site-main .portfolio-area .project-title h2 {
 	font-family: 'Inter', sans-serif;
-	font-size: 30px;
-	font-weight: 500;
+	font-size: 24px;
+	font-weight: 400;
 	color: var(--dark);
 	text-transform: uppercase;
 
@@ -321,6 +320,23 @@ background: linear-gradient(135.48deg, #BDA3EE -0.88%, rgba(186, 190, 237, 0.47)
 	box-shadow:  0px 4px 12px rgba(0, 0, 0, 0.21);
 }
 
+.site-main  .seemore button:hover {
+	background: whitesmoke;
+	background-clip: padding-box;
+	color: var(dark);
+}
+
+.site-main  .seemore button:after {
+	position: absolute;
+	top: -1px;left: -1px;
+	bottom: -1.5px; right: -1.5px;
+	background: var(--button);
+	content: '';
+	z-index: -1;
+	border-radius: 3px;
+}
+
+
 @media screen and (max-width: 600px){
 	.site-main  .seemore button{
 		font-size: 16px;
@@ -343,19 +359,19 @@ background: linear-gradient(135.48deg, #BDA3EE -0.88%, rgba(186, 190, 237, 0.47)
 		color: var(--dark);
 	}
 
+	.site-main  .button-group button{
+	padding: 4px 4px ;
+	line-height: 5px;
 }
 
-@media screen and (min-width: 600px){
-	.site-main .portfolio-area .port h1{
-		font-family: 'Inter', sans-serif;
-		font-size: 40px;
-		font-weight: 800;
-		color: var(--dark);
-	}
+}
+
+@media screen and (width: 100-600px){
+	
 	.site-main .portfolio-area .port h2{
 		font-family: 'Inter', sans-serif;
-		font-size: 32px;
-		font-weight: 500;
+		font-size: 24px;
+		font-weight: 400;
 		color: var(--dark);
 	}
 
@@ -476,7 +492,7 @@ background: linear-gradient(135.48deg, #BDA3EE -0.88%, rgba(186, 190, 237, 0.47)
 }
 
 @media screen and (max-width: 400px){
-	.contact h5.context {
+	.contact .context {
 		font-size: 15px;
 
 	}
